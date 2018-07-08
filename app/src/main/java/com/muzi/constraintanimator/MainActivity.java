@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ConstraintSet first, second, third;
+    private ConstraintSet first, second, third, fourth;
     private ConstraintLayout firstLayout;
     private Button start;
     int index = 1;
@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
         first = new ConstraintSet();
         second = new ConstraintSet();
         third = new ConstraintSet();
+        fourth = new ConstraintSet();
         firstLayout = findViewById(R.id.contentPanel);
         start = findViewById(R.id.start);
 
         first.clone(firstLayout);
         second.clone(this, R.layout.layout2);
         third.clone(this, R.layout.layout3);
+        fourth.clone(this, R.layout.layout4);
         start.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
@@ -46,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
                         third.applyTo(firstLayout);
                         break;
                     case 3:
+                        index = 4;
+                        TransitionManager.beginDelayedTransition(firstLayout);
+                        fourth.applyTo(firstLayout);
+                        break;
+                    case 4:
                         index = 1;
                         TransitionManager.beginDelayedTransition(firstLayout);
                         first.applyTo(firstLayout);

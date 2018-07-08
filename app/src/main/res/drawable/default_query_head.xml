@@ -8,16 +8,16 @@
             <solid android:color="#dffdf1" />
 
             <size
-                android:width="74dp"
-                android:height="74dp" />
+                android:width="@dimen/dp_74"
+                android:height="@dimen/dp_74" />
 
         </shape>
 
     </item>
 
     <item
-        android:width="16dp"
-        android:height="24dp"
+        android:width="@dimen/dp_16"
+        android:height="@dimen/dp_24"
         android:drawable="@drawable/icon_query"
         android:gravity="center"></item>
 

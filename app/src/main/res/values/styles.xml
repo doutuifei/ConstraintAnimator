@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ItemSizeLarge">
+        <item name="android:layout_width">@dimen/dp_267</item>
+        <item name="android:layout_height">@dimen/dp_317</item>
+    </style>
+
+    <style name="ItemSizeSmall">
+        <item name="android:layout_width">@dimen/dp_176</item>
+        <item name="android:layout_height">@dimen/dp_211</item>
+    </style>
+
+    <style name="ItemMiddle" parent="ItemSizeSmall">
+        <item name="android:layout_marginLeft">@dimen/dp_93</item>
+    </style>
+    
 </resources>

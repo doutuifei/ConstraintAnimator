@@ -8,29 +8,23 @@
 
     <com.muzi.constraintanimator.ItemView
         android:id="@id/item1"
-        android:layout_width="176dp"
-        android:layout_height="211dp"
-        android:layout_marginStart="296dp"
+        style="@style/ItemSizeSmall"
+        android:layout_marginStart="@dimen/dp_296"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item2"
-        android:layout_width="176dp"
-        android:layout_height="211dp"
-        android:layout_marginLeft="79dp"
+        style="@style/ItemMiddle"
         app:layout_constraintLeft_toRightOf="@id/item1" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item3"
-        android:layout_width="176dp"
-        android:layout_height="211dp"
-        android:layout_marginLeft="79dp"
+        style="@style/ItemMiddle"
         app:layout_constraintLeft_toRightOf="@id/item2" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item4"
-        android:layout_width="176dp"
-        android:layout_height="211dp"
+        style="@style/ItemSizeSmall"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

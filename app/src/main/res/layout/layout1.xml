@@ -21,31 +21,34 @@
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item1"
-        android:layout_width="267dp"
-        android:layout_height="317dp"
+        style="@style/ItemSizeLarge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item2"
-        android:layout_width="267dp"
-        android:layout_height="317dp"
+        style="@style/ItemSizeLarge"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item3"
-        android:layout_width="176dp"
-        android:layout_height="211dp"
+        style="@style/ItemSizeSmall"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item4"
-        android:layout_width="176dp"
-        android:layout_height="211dp"
+        style="@style/ItemSizeSmall"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.muzi.constraintanimator.ItemView
+        android:id="@+id/item5"
+        style="@style/ItemSizeSmall"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

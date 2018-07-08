@@ -8,36 +8,24 @@
 
     <com.muzi.constraintanimator.ItemView
         android:id="@id/item1"
-        style="@style/ItemSizeLarge"
-        android:layout_marginStart="@dimen/dp_333"
+        style="@style/ItemSizeSmall"
+        android:layout_marginStart="@dimen/dp_167"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item2"
-        style="@style/ItemSizeLarge"
-        android:layout_marginLeft="@dimen/dp_93"
+        style="@style/ItemMiddle"
         app:layout_constraintLeft_toRightOf="@id/item1" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item3"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        style="@style/ItemMiddle"
+        app:layout_constraintLeft_toRightOf="@id/item2" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item4"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.muzi.constraintanimator.ItemView
-        android:id="@+id/item5"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        style="@style/ItemMiddle"
+        app:layout_constraintLeft_toRightOf="@id/item3" />
 
 
 </android.support.constraint.ConstraintLayout>
