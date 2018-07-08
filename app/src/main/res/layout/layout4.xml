@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <com.muzi.constraintanimator.ItemView
-        android:id="@id/item1"
+        android:id="@+id/item1"
         style="@style/ItemSizeSmall"
         android:layout_marginStart="@dimen/dp_167"
         app:layout_constraintStart_toStartOf="parent" />
@@ -26,6 +26,11 @@
         android:id="@+id/item4"
         style="@style/ItemMiddle"
         app:layout_constraintLeft_toRightOf="@id/item3" />
+
+    <com.muzi.constraintanimator.ItemView
+        android:id="@+id/item5"
+        android:visibility="gone"
+        style="@style/ItemMiddle" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <com.muzi.constraintanimator.ItemView
-        android:id="@id/item1"
+        android:id="@+id/item1"
         style="@style/ItemSizeLarge"
         android:layout_marginStart="@dimen/dp_333"
         app:layout_constraintStart_toStartOf="parent" />
