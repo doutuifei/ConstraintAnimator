@@ -52,6 +52,6 @@
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item8"
         style="@style/ItemMiddle"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
 </android.support.constraint.ConstraintLayout>

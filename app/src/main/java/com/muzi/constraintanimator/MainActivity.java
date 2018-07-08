@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button start;
+    private Button stub, add;
     private ResponderView responderView;
 
     @Override
@@ -17,9 +17,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         responderView = findViewById(R.id.responderView);
-        start = findViewById(R.id.start);
+        stub = findViewById(R.id.stub);
 
-        start.setOnClickListener(new View.OnClickListener() {
+        stub.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onClick(View view) {
+                responderView.stubView();
+            }
+        });
+
+        add = findViewById(R.id.add);
+
+        add.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View view) {

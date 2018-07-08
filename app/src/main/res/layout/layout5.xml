@@ -38,16 +38,16 @@
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item6"
         style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item7"
         style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item8"
         style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
 </android.support.constraint.ConstraintLayout>

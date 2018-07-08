@@ -54,14 +54,54 @@ public class ResponderView extends ConstraintLayout {
 
 
     public void addView() {
-        changeView();
+        _addView();
     }
 
     public void stubView() {
-
+        _stubView();
     }
 
-    private void changeView() {
+    private void _stubView() {
+        switch (index) {
+            case 2:
+                index = 1;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                first.applyTo(firstLayout);
+                break;
+            case 3:
+                index = 2;
+                TransitionManager.beginDelayedTransition(firstLayout);// 动画效果
+                second.applyTo(firstLayout);
+                break;
+            case 4:
+                index = 3;
+                TransitionManager.beginDelayedTransition(firstLayout);// 动画效果
+                third.applyTo(firstLayout);
+                break;
+            case 5:
+                index = 4;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                fourth.applyTo(firstLayout);
+                break;
+            case 6:
+                index = 5;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                fifth.applyTo(firstLayout);
+                break;
+            case 7:
+                index = 6;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                sixth.applyTo(firstLayout);
+                break;
+            case 8:
+                index = 7;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                seventh.applyTo(firstLayout);
+                break;
+        }
+    }
+
+    private void _addView() {
         switch (index) {
             case 1:
                 index = 2;
@@ -97,11 +137,6 @@ public class ResponderView extends ConstraintLayout {
                 index = 8;
                 TransitionManager.beginDelayedTransition(firstLayout);
                 eighth.applyTo(firstLayout);
-                break;
-            default:
-                index = 1;
-                TransitionManager.beginDelayedTransition(firstLayout);
-                first.applyTo(firstLayout);
                 break;
         }
     }
