@@ -3,6 +3,8 @@ package com.muzi.constraintanimator;
 import android.content.Context;
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
+import android.transition.AutoTransition;
+import android.transition.Transition;
 import android.transition.TransitionManager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -18,6 +20,7 @@ public class ResponderView extends ConstraintLayout {
     private ConstraintSet first, second, third, fourth, fifth, sixth, seventh, eighth;
     private ConstraintLayout firstLayout;
     private int index = 1;
+    private Transition addTransition, stubTransition;
 
     public ResponderView(Context context) {
         super(context);
@@ -32,6 +35,9 @@ public class ResponderView extends ConstraintLayout {
     private void init() {
         LayoutInflater.from(getContext()).inflate(R.layout.layout1, this, true);
         firstLayout = findViewById(R.id.contentPanel);
+
+        addTransition = new AutoTransition();
+        stubTransition = new AutoTransition();
 
         first = new ConstraintSet();
         second = new ConstraintSet();
@@ -65,37 +71,37 @@ public class ResponderView extends ConstraintLayout {
         switch (index) {
             case 2:
                 index = 1;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 first.applyTo(firstLayout);
                 break;
             case 3:
                 index = 2;
-                TransitionManager.beginDelayedTransition(firstLayout);// 动画效果
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 second.applyTo(firstLayout);
                 break;
             case 4:
                 index = 3;
-                TransitionManager.beginDelayedTransition(firstLayout);// 动画效果
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 third.applyTo(firstLayout);
                 break;
             case 5:
                 index = 4;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 fourth.applyTo(firstLayout);
                 break;
             case 6:
                 index = 5;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 fifth.applyTo(firstLayout);
                 break;
             case 7:
                 index = 6;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 sixth.applyTo(firstLayout);
                 break;
             case 8:
                 index = 7;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, stubTransition);
                 seventh.applyTo(firstLayout);
                 break;
         }
@@ -105,37 +111,37 @@ public class ResponderView extends ConstraintLayout {
         switch (index) {
             case 1:
                 index = 2;
-                TransitionManager.beginDelayedTransition(firstLayout);// 动画效果
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 second.applyTo(firstLayout);
                 break;
             case 2:
                 index = 3;
-                TransitionManager.beginDelayedTransition(firstLayout);// 动画效果
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 third.applyTo(firstLayout);
                 break;
             case 3:
                 index = 4;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 fourth.applyTo(firstLayout);
                 break;
             case 4:
                 index = 5;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 fifth.applyTo(firstLayout);
                 break;
             case 5:
                 index = 6;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 sixth.applyTo(firstLayout);
                 break;
             case 6:
                 index = 7;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 seventh.applyTo(firstLayout);
                 break;
             case 7:
                 index = 8;
-                TransitionManager.beginDelayedTransition(firstLayout);
+                TransitionManager.beginDelayedTransition(firstLayout, addTransition);
                 eighth.applyTo(firstLayout);
                 break;
         }
