@@ -15,7 +15,7 @@ import android.view.LayoutInflater;
  */
 public class ResponderView extends ConstraintLayout {
 
-    private ConstraintSet first, second, third, fourth, fifth;
+    private ConstraintSet first, second, third, fourth, fifth, sixth, seventh, eighth;
     private ConstraintLayout firstLayout;
     private int index = 1;
 
@@ -38,12 +38,18 @@ public class ResponderView extends ConstraintLayout {
         third = new ConstraintSet();
         fourth = new ConstraintSet();
         fifth = new ConstraintSet();
+        sixth = new ConstraintSet();
+        seventh = new ConstraintSet();
+        eighth = new ConstraintSet();
 
         first.clone(firstLayout);
         second.clone(getContext(), R.layout.layout2);
         third.clone(getContext(), R.layout.layout3);
         fourth.clone(getContext(), R.layout.layout4);
         fifth.clone(getContext(), R.layout.layout5);
+        sixth.clone(getContext(), R.layout.layout6);
+        seventh.clone(getContext(), R.layout.layout7);
+        eighth.clone(getContext(), R.layout.layout8);
     }
 
 
@@ -76,6 +82,21 @@ public class ResponderView extends ConstraintLayout {
                 index = 5;
                 TransitionManager.beginDelayedTransition(firstLayout);
                 fifth.applyTo(firstLayout);
+                break;
+            case 5:
+                index = 6;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                sixth.applyTo(firstLayout);
+                break;
+            case 6:
+                index = 7;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                seventh.applyTo(firstLayout);
+                break;
+            case 7:
+                index = 8;
+                TransitionManager.beginDelayedTransition(firstLayout);
+                eighth.applyTo(firstLayout);
                 break;
             default:
                 index = 1;

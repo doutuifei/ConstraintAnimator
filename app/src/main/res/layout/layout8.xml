@@ -9,48 +9,51 @@
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item1"
         style="@style/ItemSizeSmall"
-        android:layout_marginStart="@dimen/dp_296"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent "
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_marginStart="@dimen/dp_167"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item2"
         style="@style/ItemMiddle"
-        app:layout_constraintLeft_toRightOf="@id/item1"
-        app:layout_constraintBottom_toBottomOf="parent "
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintLeft_toRightOf="@id/item1" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item3"
         style="@style/ItemMiddle"
-        app:layout_constraintLeft_toRightOf="@id/item2"
-        app:layout_constraintBottom_toBottomOf="parent "
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintLeft_toRightOf="@id/item2" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item4"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        style="@style/ItemMiddle"
+        app:layout_constraintLeft_toRightOf="@id/item3" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item5"
         style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        android:layout_marginStart="@dimen/dp_167"
+        android:layout_marginTop="@dimen/dp_33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item1" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item6"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        style="@style/ItemMiddle"
+        android:layout_marginTop="@dimen/dp_33"
+        app:layout_constraintLeft_toRightOf="@id/item5"
+        app:layout_constraintTop_toBottomOf="@id/item1" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item7"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        style="@style/ItemMiddle"
+        android:layout_marginTop="@dimen/dp_33"
+        app:layout_constraintLeft_toRightOf="@id/item6"
+        app:layout_constraintTop_toBottomOf="@id/item1" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item8"
-        style="@style/ItemSizeSmall"
-        android:visibility="gone" />
+        style="@style/ItemMiddle"
+        android:layout_marginTop="@dimen/dp_33"
+        app:layout_constraintLeft_toRightOf="@id/item7"
+        app:layout_constraintTop_toBottomOf="@id/item1" />
 
 </android.support.constraint.ConstraintLayout>
