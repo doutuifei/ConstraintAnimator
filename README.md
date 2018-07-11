@@ -1,4 +1,5 @@
 # Constraint动画
 
 ## 预览
-<iframe width="560" height="315" src="https://github.com/mzyq/ConstraintAnimator/blob/bfbfac7dba72c4fae8741cc33f6a9dfaee8da4a1/img/preview.mp4" frameborder="0" allowfullscreen></iframe>
+
+![img](https://github.com/mzyq/ConstraintAnimator/blob/4cc38cbaeefad03c6a25df0ccd40f4c439150a99/img/img.gif)
