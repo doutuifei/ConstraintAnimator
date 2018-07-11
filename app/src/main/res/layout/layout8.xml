@@ -10,22 +10,30 @@
         android:id="@+id/item1"
         style="@style/ItemSizeSmall"
         android:layout_marginStart="@dimen/dp_167"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="@dimen/dp_160"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item2"
         style="@style/ItemMiddle"
-        app:layout_constraintLeft_toRightOf="@id/item1" />
+        android:layout_marginTop="@dimen/dp_160"
+        app:layout_constraintLeft_toRightOf="@id/item1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item3"
         style="@style/ItemMiddle"
-        app:layout_constraintLeft_toRightOf="@id/item2" />
+        android:layout_marginTop="@dimen/dp_160"
+        app:layout_constraintLeft_toRightOf="@id/item2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item4"
         style="@style/ItemMiddle"
-        app:layout_constraintLeft_toRightOf="@id/item3" />
+        android:layout_marginTop="@dimen/dp_160"
+        app:layout_constraintLeft_toRightOf="@id/item3"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.muzi.constraintanimator.ItemView
         android:id="@+id/item5"
