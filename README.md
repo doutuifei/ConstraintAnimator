@@ -2,4 +2,4 @@
 
 ## 预览
 
-![img](https://github.com/mzyq/ConstraintAnimator/blob/4cc38cbaeefad03c6a25df0ccd40f4c439150a99/img/img.gif)
+![img](https://github.com/mzyq/ConstraintAnimator/blob/5d8229725a4c16205a1570e23dbdcd5d1ceac76b/img/img.gif)
